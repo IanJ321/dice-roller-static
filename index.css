@@ -1,0 +1,98 @@
+/* 
+    The code in this file came from the ChatGPT prompt we used to complete the Sprint 2 Web Dice Roller assignment in class. 
+    This code has been slightly modified from the original assignment version to change the appearance.
+    Modifications made here include:
+    - Changing green button (+ background and hover) to red/orange
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background: #111;
+}
+
+.container {
+    width: 420px;
+    padding: 32px;
+    text-align: center;
+    color: white;
+    background: #333;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.instructions {
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: #444;
+}
+
+.instructions h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.instructions p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.diceArea {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.diceField {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    align-items: center;
+    gap: 16px;
+}
+
+.diceField label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.diceField input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #999;
+    background: #eaeaea;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background: #ff7f50;
+    color: black;
+}
+
+button:hover {
+    background: #e56b43;
+}
+
+button:focus {
+    outline: 4px solid #ffb3a0;
+    outline-offset: 2px;
+}
